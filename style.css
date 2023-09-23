@@ -3161,7 +3161,7 @@ textarea.w-input, textarea.w-select {
 
 .cf-growth-h2-heading-56px {
   letter-spacing: -.01em;
-  font-family: Montserrat, sans-serif;
+  font-family: Satoshi Variable, sans-serif;
   font-size: 56px;
   font-weight: 700;
   line-height: 64px;
@@ -3197,7 +3197,7 @@ textarea.w-input, textarea.w-select {
   background-image: linear-gradient(to right, #b16cea, #ff5e69 60%, #ffa84b);
   -webkit-background-clip: text;
   background-clip: text;
-  font-style: italic;
+  font-style: normal;
   font-weight: 700;
   display: inline-block;
 }
@@ -3225,7 +3225,7 @@ textarea.w-input, textarea.w-select {
   color: #000;
   letter-spacing: -.01em;
   margin-bottom: 16px;
-  font-family: Montserrat, sans-serif;
+  font-family: Satoshi Variable, sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 40px;
@@ -3249,8 +3249,9 @@ textarea.w-input, textarea.w-select {
 }
 
 .cf-growth-para-text-18px {
+  float: none;
   color: #000;
-  font-family: Montserrat, sans-serif;
+  font-family: Satoshi Variable, sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 32px;
@@ -3259,8 +3260,8 @@ textarea.w-input, textarea.w-select {
 .cf-growth-para-text-20px {
   opacity: .7;
   margin-top: 26px;
-  font-family: Montserrat, sans-serif;
-  font-size: 20px;
+  font-family: Satoshi Variable, sans-serif;
+  font-size: 24px;
   line-height: 32px;
 }
 
@@ -4590,7 +4591,7 @@ textarea.w-input, textarea.w-select {
   background-color: #fff;
 }
 
-.text-block-3, .text-block-4, .text-block-5 {
+.text-block-3, .text-block-4, .text-block-5, .bold-text-5, .bold-text-6, .bold-text-7 {
   font-family: Satoshi Variable, sans-serif;
 }
 
