@@ -1,7 +1,3 @@
-/*!
- * @license MIT
- */
-
 (() => {
   var u = (e, t) => () => (t || e((t = { exports: {} }).exports, t), t.exports);
   var Ui = u(() => {
