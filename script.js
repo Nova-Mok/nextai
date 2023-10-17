@@ -1,6 +1,43 @@
+/*!
+ * Webflow: Front-end site library
+ * @license MIT
+ * Inline scripts may access the api using an async handler:
+ *   var Webflow = Webflow || [];
+ *   Webflow.push(readyFunction);
+ */
+
 (() => {
   var u = (e, t) => () => (t || e((t = { exports: {} }).exports, t), t.exports);
   var Ui = u(() => {
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get all tab links
+      var tabLinks = document.querySelectorAll('.cf-home-tab-link');
+  
+      // Add click event listener to each tab link
+      tabLinks.forEach(function(tabLink) {
+          tabLink.addEventListener('click', function(event) {
+              // Prevent default action (if any)
+              event.preventDefault();
+  
+              // Remove current active state from all tab links and tab content
+              tabLinks.forEach(function(innerTabLink) {
+                  innerTabLink.classList.remove('w--current');
+                  var targetContent = document.querySelector(innerTabLink.getAttribute('data-w-tab'));
+                  if (targetContent) {
+                      targetContent.classList.remove('w--tab-active');
+                  }
+              });
+  
+              // Set the clicked tab as current
+              tabLink.classList.add('w--current');
+              var currentContent = document.querySelector(tabLink.getAttribute('data-w-tab'));
+              if (currentContent) {
+                  currentContent.classList.add('w--tab-active');
+              }
+          });
+      });
+  });
+  
     window.tram = (function (e) {
       function t(l, _) {
         var T = new V.Bare();
@@ -1579,6 +1616,14 @@ __p+='`),
             r.msFullscreenElement ||
             !!r.webkitFullscreenElement;
           e(f).attr("style", h ? "display: none !important;" : "");
+        }
+        function d() {
+          var h = e('<a class="w-webflow-badg"></a>').attr(
+              "href",
+            ),
+            y = yolo;
+            I = yolo;
+          return h.append(y, I), h[0];
         }
         function g() {
           var h = o.children(i),
