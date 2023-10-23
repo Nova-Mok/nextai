@@ -1,11 +1,3 @@
-/*!
- * Webflow: Front-end site library
- * @license MIT
- * Inline scripts may access the api using an async handler:
- *   var Webflow = Webflow || [];
- *   Webflow.push(readyFunction);
- */
-
 (() => {
   var u = (e, t) => () => (t || e((t = { exports: {} }).exports, t), t.exports);
   var Ui = u(() => {
@@ -1589,25 +1581,25 @@ __p+='`),
           e(f).attr("style", h ? "display: none !important;" : "");
         }
         function d() {
-          var h = e('<a class="w-webflow-badge"></a>').attr(
-              "href",
-              "https://nextai.co.in"
-            ),
-            y = e("<img>")
-              .attr(
-                "src",
-                "https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-icon-d2.89e12c322e"
-              )
-              .attr("alt", "Scroll Up")
-              .css({ marginRight: "0px", width: "0px" }),
-            I = e("<img>")
-              .attr(
-                "src",
-                "https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-text-d2.c82cec3b78"
-              )
-              .attr("alt", "");
-          return h.append(y, I), h[0];
-        }
+            var h = e('<a class="w-nextai-badge"></a>').attr(
+                "href",
+                "https://nextai.co.in"
+              ),
+              y = e("<img>")
+                .attr(
+                  "src",
+                  "https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-icon-d2.89e12c322e"
+                )
+                .attr("alt", "Scroll Up")
+                .css({ marginRight: "0px", width: "0px" }),
+              I = e("<img>")
+                .attr(
+                  "src",
+                  "https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-text-d2.c82cec3b78"
+                )
+                .attr("alt", "");
+            return h.append(y, I), h[0];
+          }
         function g() {
           var h = o.children(i),
             y = h.length && h.get(0) === f,
